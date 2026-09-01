@@ -1,0 +1,30 @@
+{
+  "rules": {
+    "no-console": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "typescript/consistent-type-imports": "off",
+    "typescript/no-explicit-any": "off",
+    "typescript/explicit-function-return-type": "off",
+    "no-shadow": "off",
+    "no-empty-function": [
+      "error",
+      {
+        "allow": ["constructors"]
+      }
+    ],
+    "no-useless-constructor": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": false
+      }
+    ]
+  }
+}

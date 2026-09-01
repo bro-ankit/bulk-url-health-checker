@@ -1,0 +1,192 @@
+<div>
+  <div
+    class="flex flex-col gap-6"
+  >
+    <section
+      class="flex flex-col gap-2"
+    >
+      <div
+        class="flex items-center justify-between gap-2"
+      >
+        <h1
+          class="text-lg font-semibold inline-flex items-center gap-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-loader-circle text-blue-500 animate-spin"
+            fill="none"
+            height="18"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="18"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 12a9 9 0 1 1-6.219-8.56"
+            />
+          </svg>
+          brave-tiger-a1b2c3
+        </h1>
+        <div
+          class="flex gap-2"
+        >
+          <button
+            class="btn"
+            type="button"
+          >
+            Cancel batch
+          </button>
+          <button
+            class="btn"
+            type="button"
+          >
+            Retry failed
+          </button>
+        </div>
+      </div>
+      <p
+        class="text-sm text-gray-600"
+      >
+        6
+         succeeded, 
+        1
+         failed, 
+        10
+         total
+      </p>
+    </section>
+    <section
+      class="flex flex-col gap-2"
+    >
+      <ul
+        class="flex flex-col gap-2"
+      >
+        <li
+          class="card px-3 py-2 flex flex-col gap-1"
+        >
+          <span
+            class="inline-flex items-center gap-2 text-sm text-gray-900"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle-check text-green-600"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <path
+                d="m16 9-5.5 5.5L8 12"
+              />
+            </svg>
+            <span
+              class="truncate"
+            >
+              https://example.com
+            </span>
+          </span>
+          <span
+            class="text-xs text-gray-500"
+          >
+            200
+             · 
+            120
+            ms
+             · Example
+          </span>
+        </li>
+        <li
+          class="card px-3 py-2 flex flex-col gap-1"
+        >
+          <span
+            class="inline-flex items-center gap-2 text-sm text-gray-900"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle-x text-red-600"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <path
+                d="m15 9-6 6"
+              />
+              <path
+                d="m9 9 6 6"
+              />
+            </svg>
+            <span
+              class="truncate"
+            >
+              https://broken.example.com
+            </span>
+          </span>
+          <span
+            class="text-xs text-red-600"
+          >
+            connection timed out
+          </span>
+        </li>
+        <li
+          class="card px-3 py-2 flex flex-col gap-1"
+        >
+          <span
+            class="inline-flex items-center gap-2 text-sm text-gray-900"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-clock text-gray-500"
+              fill="none"
+              height="14"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="14"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+              <path
+                d="M12 6v6l4 2"
+              />
+            </svg>
+            <span
+              class="truncate"
+            >
+              https://queued.example.com
+            </span>
+          </span>
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>

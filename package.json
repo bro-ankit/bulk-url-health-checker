@@ -1,0 +1,37 @@
+{
+  "name": "bulk-url-health-checker",
+  "private": true,
+  "packageManager": "pnpm@10.34.4",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "bootstrap": "bash scripts/setup.sh",
+    "build:packages": "pnpm --filter \"./packages/*\" build",
+    "build:apps": "pnpm --filter \"./apps/*\" build",
+    "start": "pnpm --filter \"./apps/*\" start",
+    "dev": "pnpm --filter \"./apps/*\" dev",
+    "build": "pnpm build:packages && pnpm build:apps",
+    "lint:apps": "pnpm --filter \"./apps/*\" lint",
+    "lint:packages": "pnpm --filter \"./packages/*\" lint",
+    "lint": "pnpm lint:apps && pnpm lint:packages",
+    "test:apps": "pnpm --filter \"./apps/*\" test",
+    "test:packages": "pnpm --filter \"./packages/*\" test",
+    "test": "pnpm test:apps && pnpm test:packages",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.4.1",
+    "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "^6.6.16"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json,md}": [
+      "prettier --write"
+    ]
+  }
+}

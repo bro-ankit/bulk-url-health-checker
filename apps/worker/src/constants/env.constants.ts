@@ -1,0 +1,13 @@
+export const ENV_VARIABLES = {
+  DATABASE: {
+    HOST: 'DATABASE_HOST',
+    PORT: 'DATABASE_PORT',
+    USER: 'DATABASE_USER',
+    PASSWORD: 'DATABASE_PASSWORD',
+    NAME: 'DATABASE_NAME',
+  },
+  REDIS: {
+    HOST: 'REDIS_HOST',
+    PORT: 'REDIS_PORT',
+  },
+} as const;
